@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "LibraryManagement.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LibraryManagement.DAL": "1.0.0",
+          "LibraryManagement.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagement.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.BLL.dll": {}
+        }
+      },
+      "LibraryManagement.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LibraryManagement.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagement.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.DAL.dll": {}
+        }
+      },
+      "LibraryManagement.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LibraryManagement.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LibraryManagement.BLL/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagement.BLL/LibraryManagement.BLL.csproj",
+      "msbuildProject": "../LibraryManagement.BLL/LibraryManagement.BLL.csproj"
+    },
+    "LibraryManagement.DAL/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagement.DAL/LibraryManagement.DAL.csproj",
+      "msbuildProject": "../LibraryManagement.DAL/LibraryManagement.DAL.csproj"
+    },
+    "LibraryManagement.Models/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagement.Models/LibraryManagement.Models.csproj",
+      "msbuildProject": "../LibraryManagement.Models/LibraryManagement.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "LibraryManagement.BLL >= 1.0.0",
+      "LibraryManagement.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\foxchan\\.nuget\\packages\\": {},
@@ -38,7 +95,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\foxchan\\OneDrive\\Desktop\\Code folder\\Back End Class\\Advance DataBase and ORM\\fixe-your-shit\\LibraryManagement.BLL\\LibraryManagement.BLL.csproj": {
+              "projectPath": "C:\\Users\\foxchan\\OneDrive\\Desktop\\Code folder\\Back End Class\\Advance DataBase and ORM\\fixe-your-shit\\LibraryManagement.BLL\\LibraryManagement.BLL.csproj"
+            },
+            "C:\\Users\\foxchan\\OneDrive\\Desktop\\Code folder\\Back End Class\\Advance DataBase and ORM\\fixe-your-shit\\LibraryManagement.Models\\LibraryManagement.Models.csproj": {
+              "projectPath": "C:\\Users\\foxchan\\OneDrive\\Desktop\\Code folder\\Back End Class\\Advance DataBase and ORM\\fixe-your-shit\\LibraryManagement.Models\\LibraryManagement.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
